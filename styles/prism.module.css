@@ -1,0 +1,97 @@
+/* Copy from tailwindcss.com
+https://github.com/tailwindlabs/tailwindcss.com/blob/master/src/css/prism.css
+*/
+
+.token.tag,
+.token.class-name,
+.token.selector,
+.token.selector .class,
+.token.function {
+  color: ​#ff00ff;
+}
+
+.token.attr-name,
+.token.keyword,
+.token.rule,
+.token.operator,
+.token.pseudo-class,
+.token.important {
+  color: ​#00ffff;
+}
+
+.token.attr-value,
+.token.class,
+.token.string,
+.token.number,
+.token.unit,
+.token.color {
+  color: ​#00ff00;
+}
+
+.token.punctuation,
+.token.module,
+.token.property {
+  color: ​#0000ff;
+}
+
+.token.atapply .token:not(.rule):not(.important) {
+  color: inherit;
+}
+
+.language-shell .token:not(.comment) {
+  color: inherit;
+}
+
+.language-css .token.function {
+  color: inherit;
+}
+
+.token.comment {
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.token.deleted:not(.prefix) {
+  position: relative;
+  display: block;
+  padding-left: 1rem /* 16px */;
+  padding-right: 1rem /* 16px */;
+  margin-left: -1rem /* -16px */;
+  margin-right: -1rem /* -16px */;
+}
+
+.token.deleted:not(.prefix)::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  --tw-bg-opacity: 0.25;
+  pointer-events: none;
+  background: #fb7185;
+}
+
+.token.deleted.prefix {
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
+
+  user-select: none;
+}
+
+.token.inserted:not(.prefix) {
+  display: block;
+  padding-left: 1rem /* 16px */;
+  padding-right: 1rem /* 16px */;
+  margin-left: -1rem /* -16px */;
+  margin-right: -1rem /* -16px */;
+  --tw-bg-opacity: 0.5;
+  background: #34d399;
+}
+
+.token.inserted.prefix {
+  --tw-text-opacity: 0.75;
+  user-select: none;
+  color: #a7f3d0;
+}
